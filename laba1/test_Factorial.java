@@ -1,10 +1,10 @@
 package laba1;
-import static laba1.Factorial.calculateFactorial;
 
 
 public class test_Factorial {
     public static void main(String[] args) {
-        calculateFactorial(5);
+        Factorial factorial = new Factorial(5);
+        factorial.calculateFactorial();
     }
 
 }
