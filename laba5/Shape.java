@@ -1,31 +1,43 @@
+import java.awt.*;
+
 public abstract class Shape {
-    private String colour;
-    private int height;
-    private int width;
+    private int x, y;
+    private Color colour;
 
-    public abstract void setPosition();
-
-    public String getColour() {
+    public Color getColour() {
         return colour;
     }
 
-    public void setColour(String colour) {
+    public void setColour(Color colour) {
         this.colour = colour;
     }
 
     public int getWidth() {
-        return width;
+        return x;
     }
 
-    public void setWidth(int width) {
-        this.width = width
+    public void setWidth(int x) {
+        this.x = x;
     }
 
     public int getHeight() {
-        return height;
+        return y;
     }
 
-    public void setHeight() {
-        this.height = height;
+    public void setHeight(int y) {
+        this.y = y;
     }
+
+    public Shape(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Shape(int x, int y, Color colour) {
+        this.x = x;
+        this.y = y;
+        this.colour = colour;
+    }
+
+    public abstract void draw(Graphics graphics);
 }
