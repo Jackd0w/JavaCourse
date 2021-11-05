@@ -1,7 +1,7 @@
 public class StudentCompare {
     private final Student[] students;
 
-    public SortStudent(Student[] students) {
+    public StudentCompare(Student[] students) {
         this.students = students;
     }
 
@@ -36,10 +36,10 @@ public class StudentCompare {
         right = rightHold;
 
         if (left < indexPivot) {
-            quick(left, indexPivot - 1);
+            QuickSort(left, right);
         }
         if (right > indexPivot) {
-            quick(indexPivot + 1, right);
+            QuickSort(left, right);
         }
 
     }
@@ -53,7 +53,7 @@ public class StudentCompare {
     public String toString() {
         StringBuilder result = new StringBuilder();
         for (Student s : students) {
-            result.append(String.dormat("Name: %s; Final Score: %d; \n", s.getName(), s.getFinalScore()));
+            result.append(String.format("Name: %s; Final Score: %d; \n", s.getName(), s.getFinalScore()));
         }
         return result.toString();
     }
