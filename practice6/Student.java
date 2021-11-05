@@ -10,7 +10,7 @@ public class Student implements Comparable<Student>{
         return finalScore;
     }
 
-    public Student(String name, int finalScore) {
+    public Student(String name, Integer finalScore) {
         this.name = name;
         this.finalScore = finalScore;
     }
