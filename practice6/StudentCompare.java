@@ -36,10 +36,10 @@ public class StudentCompare {
         right = rightHold;
 
         if (left < indexPivot) {
-            QuickSort(left, right);
+            QuickSort(left, indexPivot);
         }
         if (right > indexPivot) {
-            QuickSort(left, right);
+            QuickSort(left, indexPivot);
         }
 
     }
