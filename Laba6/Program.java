@@ -13,7 +13,7 @@ public class Program extends JFrame {
         Button west = new Button("West", "Добро пожаловать в Джидда", this);
         Button east = new Button("East", "Добро пожаловать в Дахране", this);
 
-        Button center = new Button("Center", "Добро пожаловать в Центер", this);
+        Button center = new Button("Center", "Добро пожаловать в Центр", this);
 
         container.add(north.getJButton(), BorderLayout.NORTH);
         container.add(south.getJButton(), BorderLayout.SOUTH);
