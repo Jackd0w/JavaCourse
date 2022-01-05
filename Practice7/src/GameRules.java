@@ -1,4 +1,5 @@
 import java.util.Stack;
+import java.util.Stack;
 
 public class GameRules {
     private Stack<Integer> firstPlayer;
@@ -30,7 +31,7 @@ public class GameRules {
 
     public void searchForWinner() {
         if (firstPlayer.empty() || secondPlayer.empty() || numberOfMoves >= maxNumberOfMoves)
-            return;
+            return ;
 
         int numberPlayerFirst = firstPlayer.pop();
         int numberPlayerSecond = secondPlayer.pop();
